@@ -1,0 +1,6 @@
+/* Folhas de estilo */
+
+/* Oculta o título do corpo do documento dentro do <header> */ 
+h1 {
+    /* display: none; */
+}
