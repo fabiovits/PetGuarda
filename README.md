@@ -20,8 +20,8 @@
 html
     head...
     body
-        header
-            nav
+        header...
+        nav...
         main...
         footer...
 ```
@@ -29,5 +29,10 @@ html
 > Dica: monte a estrutura de tags seguindo as especificações visuais do "wireframe" preestabelecido.
 > Neste momento, não se preocupe com a formatação, tamanhos, cores, fontes, etc.
 
+## Usando Bootstrap no projeto
 
+### Selecionando cores no bootstrap
+ - Cores → https://www.w3schools.com/bootstrap5/bootstrap_colors.php
+ - Containers → https://www.w3schools.com/bootstrap5/bootstrap_containers.php
+ - NavBars → https://www.w3schools.com/bootstrap5/bootstrap_navbar.php
 
