@@ -60,7 +60,7 @@
                     <!-- Espaço entre os itens e o último ícone -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="procurar.html">
+                            <a class="nav-link" href="procurar.html"  onclick="document.getElementById('dialogFormBusca').showModal(); return false;">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                                 <span class="d-inline d-sm-none">PROCURAR</span>
                             </a>
@@ -70,7 +70,7 @@
             </div>
         </nav>
 
-       
+
         <main class="container flex-grow-1">
             <div class="row">
                 <article class="col-12 col-md-9">
@@ -83,8 +83,8 @@
                         </p>
                         <p>
                             Sexo:
-                            <input type="radio"  name="sexo" value="macho" > Macho &nbsp;&nbsp;
-                            <input type="radio"  name="sexo" value="femea"> Fêmea
+                            <input type="radio" name="sexo" value="macho"> Macho &nbsp;&nbsp;
+                            <input type="radio" name="sexo" value="femea"> Fêmea
 
                         </p>
 
@@ -185,6 +185,26 @@
             </div>
         </footer>
     </div>
+    <!-- Modal e popup com formulário de busca -->
+    <dialog id="dialogFormBusca" class="pt-3 pb-3 rounded-2 border-0">
+
+
+        <button id="closeDialog" class="float-end border-0 bg-transparent"><i class="fa-solid fa-xmark"></i></button>
+        <h5>Procurar</h5>
+        <form action="procurar.html" method="get" class="input-group">
+            <input type="search" name="q" class="form-control">
+            <button type="submit" class="btn" style="background-color: grey; color: white;"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </dialog>
+
+    <!-- Script para fechar o moidal -->
+    <script>
+        document.getElementById("closeDialog").addEventListener("click", () => {
+            document.getElementById("dialogFormBusca").close(); // Fecha o diálogo
+        });
+    </script>
+
 </body>
 
 </html>
