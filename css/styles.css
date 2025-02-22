@@ -32,7 +32,7 @@ body {
 }
 
 header {
-    background-color: cornflowerblue;
+    background-color: rgb(31, 91, 202);
     display: flex;
     flex-wrap: wrap;
     align-items: center;

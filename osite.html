@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--  Carrega o CSS da página -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/cadastro.css">
     <!--  Meta tags para SEO -->
     <meta name="author" content="Joca da Silva">
     <meta name="keyword" content="cão, gato, pet, saúde, pelos, patas">
@@ -71,66 +70,22 @@
             </div>
         </nav>
 
-
-        <main class="container flex-grow-1">
-            <div class="row">
-                <article class="col-12 col-md-9">
-                    <h2>cadastro do petshop</h2>
-                    <form action="processa.html" method="get" id="formCadastro">
-                        <p>
-                            <label for="campoNome">Nome do pet:</label>
-                            <input type="text" name="nome" id="campoNome" placeholder="Nome completo do pet"
-                                minlength="3" required>
-                        </p>
-                        <p>
-                            Sexo:
-                            <input type="radio" name="sexo" value="macho"> Macho &nbsp;&nbsp;
-                            <input type="radio" name="sexo" value="femea"> Fêmea
-
-
-                        </p>
-
-                        <p>
-                            <label for="tipoPet">Tipo de Pet:</label>
-                            <input list="tipoPet" name="tipoPet" required>
-
-                            <datalist id="tipoPet">
-                                <option value="cachorro">Cachorro</option>
-                                <option value="gato">Gato</option>
-                                <option value="outro">Outro</option>
-                            </datalist>
-
-                        </p>
-                        <p>
-                            <label for="racaPet">Raça:</label>
-                            <input type="text" id="racaPet" name="racaPet">
-                        </p>
-                        <p>
-                            <label for="idadePet">Idade:</label>
-                            <input type="number" id="idadePet" name="idadePet">
-                        </p>
-
-                        <p>
-                            <button type="submit">Enviar</button>
-                            <!-- small>&larr; Clique somente uma vez.</small -->
-                        </p>
-
-
-
-
-
-
-
-
-                    </form>
+        <!-- Usando sticky-footer para empurrar o rodapé  para o final da página -->
+        <main class="container flex-grow-1 d-flex">
+            <div class="row d-flex flex-grow-1">
+                <article class="col-12 col-md-9 flex-grow-1 p-3">
+                    <h2>Sobre o site</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis temporibus odit in obcaecati
+                    eveniet minima sint reiciendis! Maxime, iure sequi eum quasi nobis, facere doloribus deserunt
+                    mollitia
+                    asperiores corporis qui?
                 </article>
-                <aside class="col-12 col-md-3">
+                <aside class="col-12 col-md-3 p-3">
                     <h2>Aside</h2>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iure nostrum.
                 </aside>
             </div>
         </main>
-
 
         <footer class="text-bg-dark">
             <!-- Primeiro andar - Licensa -->
@@ -187,11 +142,13 @@
             </div>
         </footer>
     </div>
+
     <!-- Modal e popup com formulário de busca -->
     <dialog id="dialogFormBusca" class="pt-3 pb-3 rounded-2 border-0">
 
 
-        <button id="closeDialog" class="float-end border-0 bg-transparent"><i class="fa-solid fa-xmark"></i></button>
+        <button id="closeDialog" class="float-end border-0 bg-transparent"><i
+                class="fa-solid fa-xmark"></i></button>
         <h5>Procurar</h5>
         <form action="procurar.html" method="get" class="input-group">
             <input type="search" name="q" class="form-control">
@@ -206,6 +163,7 @@
             document.getElementById("dialogFormBusca").close(); // Fecha o diálogo
         });
     </script>
+
 
 </body>
 
